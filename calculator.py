@@ -22,8 +22,8 @@ action = {
 if __name__ == "__main__":
     action_input = int(input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie: "))
     if not action_input in range(1,5,1):
-            logging.error("Wprowadzono niepoprawny input")
-            exit(1)
+        logging.error("Wprowadzono niepoprawny input")
+        exit(1)
     if action_input == 2 or action_input == 4:
         x_1 = float(input("Podaj pierwszy składnik: "))
         x_2 = float(input("Podaj drugi składnik: "))
